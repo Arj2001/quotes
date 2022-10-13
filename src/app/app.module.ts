@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ViewQuotesComponent } from './view-quotes/view-quotes.component';
+import { HttpClientModule } from "@angular/common/http";
 
 const addRouter:Routes = [
   {
@@ -22,7 +23,8 @@ const addRouter:Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(addRouter)
+    RouterModule.forRoot(addRouter),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
